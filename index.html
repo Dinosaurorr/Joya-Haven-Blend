@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Minimalist | Intentional Living</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="public/logo.png">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav id="main-nav">
+                <div class="nav-left">
+                    <a href="#hero-section" class="logo" id="site-logo">
+                        <img src="public/logo.png" alt="JOYA HAVEN BLEND" id="main-logo">
+                    </a>
+                </div>
+                
+                <ul id="nav-links">
+                    <li><a href="#hero-section">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#collection">Collection</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="nav-right">
+                    <button id="theme-toggle" title="Toggle Theme">
+                        <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                        <svg id="sun-icon" style="display:none;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    </button>
+                    <button id="menu-toggle" aria-label="Open Menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="mobile-menu-overlay"></div>
+    <div id="mobile-menu">
+        <div class="mobile-menu-header">
+            <a href="#hero-section" class="logo">
+                <img src="logo.png" alt="JOYA HAVEN BLEND" class="mobile-logo-img">
+            </a>
+            <button id="menu-close" aria-label="Close Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="hero" id="hero-section">
+            <div class="container">
+                <div class="hero-image-wrapper reveal reveal-left">
+                    <img class="car" src="public/3Coffeeswbg.png" alt="JOYA Haven Blend" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="hero-image-placeholder" style="display:none;">JOYA Haven Blend Image</div>
+                </div>
+                <div class="inside-container reveal reveal-right">
+                    <p class="paraHead">JOYA <span>Haven Blend</span></p>
+                    <p class="desc">Where every cup feels like home. <br>
+                    Crafted with passion, brewed to perfection—experience comfort, flavor, and joy in every sip.</p>
+                    <a href="#about" class="btn-cta">Explore Menu</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="best-sellers" id="best-sellers">
+            <div class="container">
+                <div class="section-header reveal reveal-up">
+                    <span class="eyebrow">Customer Favorites</span>
+                    <h2>Best Sellers</h2>
+                </div>
+                <div class="product-grid reveal reveal-up reveal-stagger-1">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="public/Mocha.png" alt="Mocha" class="product-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="image-placeholder" style="display:none;">Original Blend</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Mocha</h3>
+                            <p>Mocha iced café is a cold espresso drink mixed with milk and chocolate, served over ice for a sweet, rich flavor.</p>
+                            <span class="price">120.00</span>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="public/Salted Caramel.png" alt="Salted Caramel" class="product-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="image-placeholder" style="display:none;">Salted Caramel</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Salted Caramel</h3>
+                            <p>Salted caramel iced café is a cold coffee with espresso, milk, and caramel, finished with a light salty-sweet taste.</p>
+                            <span class="price">₱120.00</span>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="public/Strawberry matcha.png" alt="Strawberry Matcha" class="product-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="image-placeholder" style="display:none;">Ethereal Light</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Strawberry Matcha</h3>
+                            <p>Strawberry matcha iced café is a refreshing mix of matcha, milk, and strawberry, creating a creamy fruity-green tea blend over ice.</p>
+                            <span class="price">₱120.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <section id="about">
+            <div class="container">
+                <div class="grid">
+                    <div class="image-block reveal reveal-left" id="about-image">
+                        <div class="about-carousel" id="about-carousel">
+                            <div class="about-carousel-track" id="about-carousel-track">
+                                <div class="about-carousel-item">
+                                    <img src="public/menu1.png" alt="Soft Textures" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="image-placeholder" style="display:none;">Drinks</div>
+                                </div>
+                                <div class="about-carousel-item">
+                                    <img src="public/menu2.png" alt="Warm Beige" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="image-placeholder" style="display:none;">Non Coffee</div>
+                                </div>
+                            </div>
+                            <button class="about-nav prev" id="about-prev" aria-label="Previous slide">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                            </button>
+                            <button class="about-nav next" id="about-next" aria-label="Next slide">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-9-6"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-content reveal reveal-right">
+                        <h2>Our Menu</h2>
+                        <p>Our menu is crafted to bring comfort and refreshment in every sip. From rich coffee blends to fruity and creamy iced drinks, each item is made to suit your mood and taste.</p> 
+                        <p>We carefully prepare every drink using quality ingredients, ensuring a smooth, balanced flavor that feels both familiar and satisfying in every visit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <section id="collection">
+            <div class="container">
+                <div class="collection-footer">
+                    <p>Other Products</p>
+                </div>
+                <br>
+                <div class="carousel-wrapper reveal reveal-up">
+                    <button class="carousel-control prev" id="carousel-prev" aria-label="Previous">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    </button>
+                    
+                    <div class="carousel-container" id="carousel-container">
+                        <div class="carousel-grid" id="carousel-grid">
+                            <div class="carousel-item">
+                                <div class="image-block">
+                                    <img src="public/Strawberry Matcha Orig.png" alt="Strawberry Matcha" class="carousel-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="image-placeholder" style="display:none;">Strawberry Matcha</div>
+                                </div>
+<p></p>
+
+                                <div class="item-info">
+                                    <h4 class="item-name">Strawberry Matcha</h4>
+                                    <p class="item-desc">Strawberry matcha iced café is a refreshing mix of matcha, milk, and strawberry, creating a creamy fruity-green tea blend over ice.</p>
+                                    <span class="item-price">₱120.00</span>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="image-block">
+                                    <img src="public/Matcha Latte.png" alt="Matcha Latte" class="carousel-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="image-placeholder" style="display:none;">Matcha Latte</div>
+                                </div>
+                                <div class="item-info">
+                                    <h4 class="item-name">Matcha Latte</h4>
+                                    <p class="item-desc">Matcha latte is a smooth blend of green tea powder and milk, offering a creamy, earthy flavor with a gentle energy boost.</p>
+                                    <span class="item-price">₱120.00</span>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="image-block">
+                                    <img src="public/coconut latte with foam.png" alt="Coconut Latte with Foam" class="carousel-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="image-placeholder" style="display:none;">Warm Lighting</div>
+                                </div>
+                                <div class="item-info">
+                                    <h4 class="item-name">Coconut Latte with Foam</h4>
+                                    <p class="item-desc">Coconut latte with foam is a smooth blend of espresso and coconut milk, topped with light, creamy foam for a tropical twist.</p>
+                                    <span class="item-price">₱120.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control next" id="carousel-next" aria-label="Next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="dark-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand reveal reveal-up">
+                    <a href="#hero-section" class="logo">
+                        <img src="public/logo.png" alt="JOYA HAVEN BLEND" class="footer-logo-img">
+                    </a>
+                    <p>Crafting mindful café experiences that bring comfort and warmth in every cup. Our mission is to serve simple, refreshing drinks that create moments of calm in your day.</p>                </div>
+                <div class="footer-contact reveal reveal-up reveal-stagger-1">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            joyahavenblend@gmail.com
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-icon"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            San Mateo, Rizal,<br> San Mateo, Philippines
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-social reveal reveal-up reveal-stagger-2">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/joyahavenblend/" class="social-link" title="Instagram" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61561690930514" class="social-link" title="Facebook" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Joya Haven Blend. All rights reserved.</p>
+                <div id="contact"></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Zoom Modal -->
+    <div id="zoom-modal" class="zoom-modal">
+        <span class="zoom-close">&times;</span>
+        <div id="zoom-content"></div>
+    </div>
+
+    <canvas id="cursor-canvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
